@@ -1,7 +1,7 @@
 class Picture < ApplicationRecord
-    validates :title, presence: true
-    validates :title, length: { in: 1..140 }
-    validates :content, presence: true
+    validates :title, presence: true, length: { in: 1..140 }
+    validates :content, presence: true, length: { in: 1..500 }
+    validates :image, presence: true
 
     belongs_to :user
 
