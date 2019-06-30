@@ -1,3 +1,57 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.gradient{
+    min-width: 980px;
+    background: linear-gradient(white, #D3D8E8)
+}
+
+.gradientContent{
+    margin: 0 auto;
+    width: 980px;
+}
+
+.lfloat{
+    float: left;
+}
+
+.top_context p{
+    margin-top: 40px;
+    margin-right: 15px;
+    width: 565px;
+    color: #0e385f;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    width: 450px;
+    word-spacing: -1px;
+}
+
+.top_img {
+    border: 0;
+    width: 536px;
+    height:194px;
+}
+
+.rfloat {
+    float: right;
+    max-width: 400px;
+}
+
+.rfloat p {
+    
+}
+.registration_container {
+    margin: 0 auto 0 auto;
+    padding-bottom: 30px;
+}
+
+.registration_top{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.reg_form_box {
+    
+}

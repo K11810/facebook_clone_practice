@@ -1,6 +1,3 @@
-<h1>Sign up</h1>
-
-<%= form_with(model: @user, local: true) do |f| %>  
 
 <% if @user.errors.any? %>
   <div id="error_explanation">
@@ -13,17 +10,32 @@
   </div>
 <% end %>
 
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-
-  <%= f.label :email %>
-  <%= f.email_field :email %>
-
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-
-  <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %>
-
-  <%= f.submit "Create my account" %>
-<% end %>
+<div class="gradient">
+  <div class="gradientContent">
+      <div class="lfloat">
+        <div class="top_context">
+            <p>Facebook-cloneを使っても、友達や同僚、同級生、仲間たちとつながりを深められません。ケータイ、スマートフォンからもアクセスできます？</p>
+              <img class="top_img" src="/facebook_hom.jpg">
+        </div>
+      </div>
+    <div class="rfloat">
+      <div class="registration_container">
+        <div id="registration_top">
+            <h1>アカウント登録</h1>
+            <p>情報のプライバシーは設定で管理できるので多分安心です。</p>
+        </div>
+            <div class="reg_form_box">
+              <%= form_with(model: @user, local: true) do |f| %>  
+                <%= f.text_field :name, placeholder: "名前" %>
+                <%= f.email_field :email, placeholder: "メールアドレス" %>
+                <%= f.password_field :password, placeholder: "パスワード" %>
+                <%= f.password_field :password_confirmation, placeholder: "パスワード(確認用)" %>
+                <%= f.submit "アカウント登録" %>
+              <% end %>
+            </div>
+          </div>  
+        </div>  
+      </div>
+    </div>
+  </div>
+</div>
