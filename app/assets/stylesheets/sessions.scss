@@ -1,3 +1,30 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.session_container{
+  margin: auto;
+  padding: 22px 108px 26px;
+  width: 500px;
+  height: 250px;
+  background-color: #fff;
+  border: 1px solid #dddfe2;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.session_title {
+  padding: 10px 0;
+}
+
+.session_title p {
+  font-weight: bold;
+}
+
+.session_email_form {
+  padding: 6px 0;
+}
+
+.session_password_form {
+  padding: 6px 0;
+}

@@ -1,4 +1,5 @@
 
+
 <% if @user.errors.any? %>
   <div id="error_explanation">
     <h2><%= pluralize(@user.errors.count, "error") %> prohibited this @user from being saved:</h2>
@@ -10,8 +11,10 @@
   </div>
 <% end %>
 
-<div class="gradient">
-  <div class="gradientContent">
+
+<div class="content">
+  <div class="container">
+
       <div class="lfloat">
         <div class="top_context">
             <p>Facebook-cloneを使っても、友達や同僚、同級生、仲間たちとつながりを深められません。ケータイ、スマートフォンからもアクセスできます？</p>
@@ -25,16 +28,26 @@
             <p>情報のプライバシーは設定で管理できるので多分安心です。</p>
         </div>
             <div class="reg_form_box">
-              <%= form_with(model: @user, local: true) do |f| %>  
+              <%= form_with(model: @user, local: true) do |f| %>
+              <div class="name_form_box mbm">
                 <%= f.text_field :name, placeholder: "名前" %>
+              </div>
+              <div class="email_form_box mbm">
                 <%= f.email_field :email, placeholder: "メールアドレス" %>
+              </div>
+              <div class="password_form_box mbm">
                 <%= f.password_field :password, placeholder: "パスワード" %>
+              </div>
+              <div class="password_confirmation_form_box mbm">
                 <%= f.password_field :password_confirmation, placeholder: "パスワード(確認用)" %>
-                <%= f.submit "アカウント登録" %>
+              </div>
+                <div class="account_submit">
+                  <%= f.submit "アカウント登録" %>
+                </div>
               <% end %>
             </div>
-          </div>  
-        </div>  
+          </div>
+        </div>
       </div>
     </div>
   </div>

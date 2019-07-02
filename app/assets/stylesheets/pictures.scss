@@ -1,3 +1,14 @@
 // Place all the styles related to the Pictures controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.operation_button {
+  display: inline-block;
+  border:1px solid #9c7e31;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, #f7dea1, #f0c24d);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  padding:0.7em 1em;
+}

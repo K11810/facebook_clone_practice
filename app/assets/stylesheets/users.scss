@@ -3,18 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.gradient{
-    min-width: 980px;
-    background: linear-gradient(white, #D3D8E8)
-}
-
-.gradientContent{
-    margin: 0 auto;
-    width: 980px;
-}
 
 .lfloat{
     float: left;
+    margin-left: 100px;
 }
 
 .top_context p{
@@ -38,10 +30,11 @@
 .rfloat {
     float: right;
     max-width: 400px;
+    margin-right: 75px;
 }
 
 .rfloat p {
-    
+
 }
 .registration_container {
     margin: 0 auto 0 auto;
@@ -51,7 +44,9 @@
 .registration_top{
     padding-top: 20px;
     padding-bottom: 20px;
+    font-weight: bold;
 }
-.reg_form_box {
-    
+
+.mbm {
+  margin-bottom: 10px;
 }
