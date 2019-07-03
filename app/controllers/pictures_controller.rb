@@ -1,7 +1,7 @@
 class PicturesController < ApplicationController
   before_action :set_picture, only: [:show, :edit, :update, :destroy]
   before_action :logged_in?, only: [:new, :create]
-  
+
   def index
     @pictures = Picture.all
   end
@@ -61,18 +61,19 @@ class PicturesController < ApplicationController
 
 
   private
-    def set_picture
-      @picture = Picture.find(params[:id])
-    end
 
-    def picture_params
-      params.require(:picture).permit(:title, :content, :image, :image_cache)
+  def set_picture
+    @picture = Picture.find(params[:id])
+  end
+
+  def picture_params
+    params.require(:picture).permit(:title, :content, :image, :image_cache)
+  end
+
+  def logged_in?
+    if current_user.nil?
+      redirect_to new_session_path
     end
-    
-    def logged_in?
-      if current_user.nil?
-        redirect_to new_session_path
-      end
-    end
+  end
 
 end
